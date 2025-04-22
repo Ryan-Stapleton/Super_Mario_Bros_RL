@@ -1,6 +1,6 @@
 # Super Mario Bros Reinforcement Learning Project - 41118 Artificial Intelligence in Robotics Final Project
 
-To Install:
+To Install & Run:
 - Create conda environment using AI in Robotics Tutorial and install all relevant libraries (Mastery Quiz 03 Classroom Tutorial Files).
 
 - Follow the stable-retro package tutorial, ensuring all relevant packages are installed in the site-packages folder located: your_anaconda_dir/anaconda3/envs/ai4robotics/lib/python3.8/site-packages (Link: https://stable-retro.farama.org)
