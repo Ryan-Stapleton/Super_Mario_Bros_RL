@@ -11,42 +11,42 @@ import random
 
 env = retro.make(game="SuperMarioBros-Nes")
 env = env.unwrapped
+env.reset()
 
-class Network(torch.nn.Module):
-    def __init__(self, env):
-        super().__init__()
-        self.input_shape = env.observation_space.shape
-        self.action_space = env.action_space.n
+# class Network(torch.nn.Module):
+#     def __init__(self, env):
+#         super().__init__()
+#         self.input_shape = env.observation_space.shape
+#         self.action_space = env.action_space.n
 
-        # build an MLP with 2 hidden layers
-        self.layers = torch.nn.Sequential(
-            torch.nn.Linear(*self.input_shape, 128),   # input layer
-            torch.nn.ReLU(),     # this is called an activation function
-            torch.nn.Linear(128, 128),    # hidden layer
-            torch.nn.ReLU(),     # this is called an activation function
-            torch.nn.Linear(128, self.action_space)    # output layer
-            )
+#         # build an MLP with 2 hidden layers
+#         self.layers = torch.nn.Sequential(
+#             torch.nn.Linear(*self.input_shape, 128),   # input layer
+#             torch.nn.ReLU(),     # this is called an activation function
+#             torch.nn.Linear(128, 128),    # hidden layer
+#             torch.nn.ReLU(),     # this is called an activation function
+#             torch.nn.Linear(128, self.action_space)    # output layer
+#             )
 
-    def forward(self, x):
-        return self.layers(x)
+#     def forward(self, x):
+#         return self.layers(x)
 
-# Instantiate the network
-q_table = Network(env)
+# # Instantiate the network
+# q_table = Network(env)
 
-# Load the state dictionary
-q_table.load_state_dict(torch.load("src/Super_Mario_RL_Project/q_table.pth"))
-q_table.eval()
+# # Load the state dictionary
+# q_table.load_state_dict(torch.load("src/Super_Mario_RL_Project/q_table.pth"))
+# q_table.eval()
 
-# Number of test episodes
-EPISODES = 10 
-success_count = 0
+# # Number of test episodes
+# EPISODES = 10 
+# success_count = 0
 
 for i in range(5000):
-        action = env.action_space.sample()
-        observation, reward, terminated, truncated, info = env.step(action)
-        env.render()
-        if terminated or truncated:
-            env.reset()
+    action = env.action_space.sample()
+    state, reward, done, _, info = env.step(action)
+    if done:
+        break
 
 # for episode in range(EPISODES):
 #     state, _ = env.reset()
