@@ -1,5 +1,4 @@
-# Super Mario Bros Reinforcement Learning Project
-Super Mario Bros Reinforcement Learning Project - 41118 Artificial Intelligence in Robotics Final Project
+# Super Mario Bros Reinforcement Learning Project - 41118 Artificial Intelligence in Robotics Final Project
 
 To Install:
 - Create conda environment using AI in Robotics Tutorial and install all relevant libraries (Mastery Quiz 03 Classroom Tutorial Files).
