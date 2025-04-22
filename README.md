@@ -5,7 +5,7 @@ To Install:
 
 - Follow the stable-retro package tutorial, ensuring all relevant packages are installed in the site-packages folder located: your_anaconda_dir/anaconda3/envs/ai4robotics/lib/python3.8/site-packages (Link: https://stable-retro.farama.org)
 
-- Move Super Mario Bros ROM Zip Folder (in this repository) to the following directory: your_anaconda_dir/anaconda3/envs/ai4robotics/lib/python3.8/site-packages/retro/data/stable/SuperMarioBros-Nes
+- Move Super Mario Bros ROM Zip Folder (Super_Mario_Bros_ROM - in this repository) to the following directory: your_anaconda_dir/anaconda3/envs/ai4robotics/lib/python3.8/site-packages/retro/data/stable/SuperMarioBros-Nes
 
 - Run the following command to import Super Mario Bros Game: python -m retro.import your_anaconda_dir/anaconda3/envs/ai4robotics/lib/python3.8/site-packages/
 
