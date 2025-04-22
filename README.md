@@ -1,2 +1,2 @@
-# Super_Mario_RL_Project
-Super Mario Reinforcement Learning Project - 41118 Artificial Intelligence in Robotics Final Project
+# Super_Mario_Bros_RL
+Super Mario Bros Reinforcement Learning Project - 41118 Artificial Intelligence in Robotics Final Project
