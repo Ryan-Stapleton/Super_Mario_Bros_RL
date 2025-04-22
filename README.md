@@ -9,7 +9,7 @@ To Install:
 
 - Run the following command to import Super Mario Bros Game: python -m retro.import your_anaconda_dir/anaconda3/envs/ai4robotics/lib/python3.8/site-packages/
 
-- Move project source files (in this repostiory) to a new directory within your conda environment: your_anaconda_dir/anaconda3/envs/ai4robotics/src/Super_Mario_RL_Project
+- Move project source files (Super_Mario_Bros_RL_Project - in this repostiory) to a new directory within your conda environment: your_anaconda_dir/anaconda3/envs/ai4robotics/src/Super_Mario_RL_Project
 
 - Run the Super_Mario_Bros_RL_Train.py file to train reinforcement learning agent.
 
